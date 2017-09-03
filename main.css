@@ -1,0 +1,59 @@
+    
+    body {
+        background-image: url(back.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+    #time {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        color: aqua;
+        font-size: 80px;
+        border: 1px solid #ccc;
+        padding: 0 5px;
+        
+        }
+    
+    .robot {
+        position: fixed;
+        top: 675px;
+        left: 50%;
+         transform: translateX(-50%) translateY(-50%);
+    }
+    
+    .eyes{
+        animation: blink .5s infinite;
+        background: radial-gradient(circle, white 15%, transparent 40%),rgba(0,198,231,1);
+        width: 650px;
+        height: 200px;
+        position: absolute;
+        top: 675px;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        z-index: -1;
+    }
+    
+    @keyframes blink {
+        50% {
+             background: radial-gradient(circle, deepskyblue 15%, transparent 40%),rgba(0,198,231,.5);
+        }
+    }
+    
+    
+    .form {
+        position: absolute;
+        left: 400px;
+        top: 50px;
+    }
+    
+    #hours, #minutes, #mid, #alarm{
+        font-family: hevetica;
+        font-size: 30px;
+        background: rgb(0,198,231);
+        border: 1px solid black;
+        border-radius: 5%;
+    }
+
